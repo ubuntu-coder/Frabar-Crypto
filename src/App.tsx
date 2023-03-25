@@ -1,11 +1,12 @@
+import { useRoutes } from "react-router-dom";
+import { routes } from "./routes";
+
 import "./assets/styles/index.css";
 
 function App() {
-  return (
-    <div className="App">
-      <h1 className="text-red-700">FRABAR Crypto initial Project</h1>
-    </div>
-  );
+  const content = useRoutes(routes);
+
+  return content;
 }
 
 export default App;
