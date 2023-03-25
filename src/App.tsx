@@ -5,8 +5,8 @@ import "./assets/styles/index.css";
 
 function App() {
   const content = useRoutes(routes);
-
   return content;
 }
 
 export default App;
+  

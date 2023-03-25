@@ -1,2 +1,2 @@
 export * from "./header/Header";
-export * from "./spinner/Loading";
+export * from "./spinner/PageLoading";
