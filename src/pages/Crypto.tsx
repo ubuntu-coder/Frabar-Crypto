@@ -17,18 +17,17 @@ function CryptoDetail() {
     navigate("/404");
   }
 
-  return (
-    !isLoading &&
-    coinData?.status == 200 && (
-      <div className="container max-w-7xl mx-auto w-full md:p-10 grid grid-cols-7 gap-x-4 min-h-[80vh] ">
-        <div className="col-span-full md:col-span-2">
-          <CryptoCard coinData={coinData?.data} />
-        </div>
-        <div className="col-span-full md:col-span-5 h-full">
-          <CryptoChart id={coinData?.data.id} />
-        </div>
+  return !isLoading && coinData?.status == 200 ? (
+    <div className="container max-w-7xl mx-auto w-full md:p-10 grid grid-cols-7 gap-x-4 min-h-[80vh] ">
+      <div className="col-span-full md:col-span-2">
+        <CryptoCard coinData={coinData?.data} />
       </div>
-    )
+      <div className="col-span-full md:col-span-5 h-full">
+        <CryptoChart id={coinData?.data.id} />
+      </div>
+    </div>
+  ) : (
+    <></>
   );
 }
 
