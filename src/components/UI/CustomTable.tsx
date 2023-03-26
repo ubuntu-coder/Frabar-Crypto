@@ -1,5 +1,3 @@
-import { tableData } from "./core/_models";
-
 import { Button, Empty, Table } from "antd";
 
 interface RowProps {

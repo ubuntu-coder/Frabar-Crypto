@@ -19,7 +19,10 @@ export const HeaderTable = ({
         onChange={(e) => {
           startTransition(() => {
             setTimeout(() => {
-              setTableParams({ ...tablePrams, search: e.target.value });
+              setTableParams({
+                ...tablePrams,
+                search: e.target.value.toLowerCase(),
+              });
             }, 750);
           });
         }}

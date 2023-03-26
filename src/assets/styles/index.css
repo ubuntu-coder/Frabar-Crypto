@@ -48,6 +48,10 @@ img {
   font-size: 80px;
 }
 
+.ant-table-row {
+  cursor: pointer !important;
+}
+
 .link_404 {
   color: #fff !important;
   padding: 10px 20px;

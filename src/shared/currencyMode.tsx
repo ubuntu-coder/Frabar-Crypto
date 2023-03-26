@@ -1,7 +1,7 @@
 import { atom } from "recoil";
 
 export const currencyMode = atom({
-  key: "currencyMode",
+  key: "currencySymbol",
   default: {
     currency: "INR",
     symbol: "₹",
